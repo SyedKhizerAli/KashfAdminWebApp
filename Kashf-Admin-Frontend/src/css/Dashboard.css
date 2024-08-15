@@ -1,0 +1,230 @@
+.main {
+  margin-left: 15%;
+  margin-top: 2%;
+  padding-top: 85px;
+}
+
+.main-heading {
+  color: #9e1911;
+  position: fixed;
+  top: 17px;
+  left: 17%;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 200px;
+  padding-top: 30px;
+  padding-bottom: 4px;
+  z-index: 1000; /* Ensure it's above other content */
+  background-color: #EFF3F0; /* Add a background color */
+  width: calc(100% - 15%); /* Adjust width to match margin-left */
+}
+
+.main hr {
+  border-top: 1px solid #cb847c;
+  width: 81%;
+  position: fixed;
+  top: 16%;
+  left: 17%;
+  right: 5%;
+}
+
+/* Add styles for New Promotion page */
+.new-textarea {
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 5px;
+  width: 400px;
+  height: 350px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.checkboxes {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1; */
+  margin-bottom: 30px;
+}
+
+.checkboxes label {
+  color: black;
+  display: inline;
+  /* flex: 0.2; */
+  margin-bottom: 5px;
+  padding-right: 5px;
+}
+
+.send-button {
+  font-weight: bold;
+  background-color: #cb847c;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 50%;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.image-container {
+  box-shadow: 4px 4px 8px #9e1911;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 450px;
+  height: 250px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.upload-button {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #9e1911;
+  color: #fff;
+  font-weight: bold;
+}
+
+.new-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: -50px;
+}
+
+.new-left-side {
+  flex: 1.15;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -60px;
+  /* margin-left: 30px; */
+}
+
+.new-right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0.85;
+  margin-top: -30px;
+}
+
+.dash-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 250px;
+}
+
+.dash-left-side {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  /* margin-left: -60px; */
+  /* margin-left: 30px; */
+}
+
+.dash-right-side {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  /* margin-top: -30px; */
+}
+
+.upload-container {
+  background-color: #f1f1d6;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease; */
+  width: 450px;
+  height: 150px;
+}
+
+/* .upload-container:hover {
+    background-color: #dcdcdc;
+  } */
+
+.upload-container .chosen-file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.upload-container .chosen-file .delete-file {
+  color: red;
+  cursor: pointer;
+}
+
+.upload-text {
+  margin: 0 !important;
+  font-size: 18px !important;
+  color: #3f3f3f !important;
+  padding-bottom: 10px !important;
+  padding-top: 15px !important;
+}
+
+.upload-container input[type="file"] {
+  display: none;
+}
+
+.choose-button {
+  background-color: #9e1911; /* Blue background color */
+  color: #fff; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.choose-button:hover {
+  background-color: #9e1911; /* Darker blue on hover */
+}
+
+.new-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doughnut-chart {
+  height: 400px !important;
+  width: 400px !important;
+}
+
+.line-chart {
+    height: 400px !important;
+    width: 700px !important;
+  }
+
+.promo-image {
+    width: 200px;
+    height: 200px;
+    background-color: red; /* temporary style to make sure the div is visible */
+  }
+  
+  .promo-image img {
+    width: 100%;
+    height: auto;
+  }

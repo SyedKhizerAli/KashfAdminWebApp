@@ -1,0 +1,52 @@
+.sidebar {
+  width: 15%;
+  height: 100%;
+  background-color: #cb847c;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar img {
+  width: 80px;
+  height: auto;
+}
+
+.sidebar hr {
+  width: 60%;
+  border: 0;
+  border-top: 1px solid white;
+}
+
+.sidebar-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.sidebar-top hr {
+  margin-top: 40px;
+}
+
+.sidebar-menu p {
+  font-weight: bold;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 3px;
+}
+
+.sidebar-menu a {
+  text-decoration: none;
+  color: inherit; /* This will make the link color the same as the text color */
+}

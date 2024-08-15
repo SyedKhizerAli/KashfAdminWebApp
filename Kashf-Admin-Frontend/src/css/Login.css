@@ -1,0 +1,160 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-half {
+  flex: 0.85;
+  background-color: #cb847c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-half {
+  flex: 1.15;
+  background-color: #eff3f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 200px;
+}
+
+.right-half h3 {
+  color: #cb847c;
+  margin-top: -10px;
+  margin-bottom: 50px;
+}
+
+.right-half h1 {
+  color: #cb847c;
+}
+
+.right-half h5 {
+  color: #cb847c;
+  margin-left: 145px;
+  margin-top: 5px;
+}
+
+.right-half input {
+  margin-bottom: 10px;
+  padding: 15px;
+  width: 400px;
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 5px;
+}
+
+.right-half input::placeholder {
+  color: #bdbdbd; /* Placeholder text color */
+}
+
+.right-half input:focus {
+  background-color: #e6e6e6;
+}
+
+.right-half button {
+  margin-top: 30px;
+  padding: 15px 20px;
+  right: 50px;
+  width: 125px;
+  font-weight: bold;
+  background-color: #cb847c; /* Background color */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 50px; /* 50% rounded edges */
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.success-message {
+  color: #9e1911;
+  font-size: 12px;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid 9e1911;
+  border-radius: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  .right-half input, .right-half button {
+    width: 350px;
+  }
+
+  .right-half h5 {
+    margin-left: 120px;
+  }
+}
+
+@media (max-width: 700px) {
+  .login-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-half {
+    flex: none;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .right-half {
+    flex: none;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .right-half input, .right-half button {
+    width: 300px;
+  }
+
+  .right-half h5 {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-half {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .right-half input, .right-half button {
+    width: 250px;
+  }
+
+  .right-half h5 {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .left-half {
+    height: 40vh;
+  }
+
+  .right-half {
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+  }
+
+  .right-half input, .right-half button {
+    width: 200px;
+  }
+
+  .right-half h5 {
+    margin-left: 0;
+  }
+}
